@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./nav/navbar";
 import Home from "./pages/home";
-import DarkMode from "./pages/darkmode";
 import { Counter } from "./redux/features/counter/Counter";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
         {/* <div className="flex w-full"> */}
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/darkmode" element={<DarkMode/>} />
           <Route path="/counter" element={<Counter/>} />
         </Routes>
         {/* </div> */}
