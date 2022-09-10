@@ -1,16 +1,18 @@
 import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 function DarkMode() {
-  const [darkToggle, setDarkToggle] = React.useState(false)
+  // const [darkToggle, setDarkToggle] = React.useState(false)
+  const darkToggle = useSelector((state) => state.darkToggle.value)
   return (
+    
     <div
-      class={`h-screen w-full flex items-center justify-center bg-gray-300 flex-col ${
-        darkToggle && 'dark'
-      }`}
+      class={`h-screen w-full flex items-center justify-center bg-gray-300 flex-col 
+      ${darkToggle && 'dark'}`}
     >
-      <label class="toggleDarkBtn">
+      {/* <label class="toggleDarkBtn">
         <input type="checkbox" onClick={() => setDarkToggle(!darkToggle)} />
         <span class="slideBtnTg round"></span>
-      </label>
+      </label> */}
       <div class="max-w-sm rounded overflow-hidden bg-gray-100 p-5 rounded-lg mt-4 text-white dark:bg-gray-900">
         <img
           class="w-full"
