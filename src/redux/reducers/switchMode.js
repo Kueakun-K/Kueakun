@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const switchMode = createSlice({
     name: 'darkToggle',
     initialState: {
-        value: false,
+        value: true,
     },
     reducers: {
         changeMode: (state) => {
