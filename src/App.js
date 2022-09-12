@@ -1,5 +1,5 @@
 import "./App.css";
-import {  Routes, Route, MemoryRouter , BrowserRouter } from "react-router-dom";
+import {  Routes, Route, BrowserRouter } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import Navbar from "./nav/navbar";
