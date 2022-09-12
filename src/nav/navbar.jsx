@@ -20,11 +20,11 @@ import cat from "../img/cat.png"
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  
   const [activeIndex, setActiveIndex] = useState(0)
-  console.log(activeIndex)
 
   return (
-    <div className="grid grid-cols-6 bottom-0 fixed border-t-2 sm:border-t-0 sm:divide-x-0 sm:static sm:block sm:w-56 sm:h-screen dark:bg-slate-900 bg-white  w-full">
+    <div className="grid grid-cols-6 bottom-0 fixed border-t-2 sm:border-t-0 sm:divide-x-0 sm:block  sm:w-44 sm:h-screen dark:bg-slate-900 bg-white  w-full">
       <div className=" hidden sm:block pt-6 mb-5">
         <img src={kueakun_b} alt="KUEAKUNB" className="dark:hidden h-16"></img>
         <img
@@ -114,7 +114,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hidden sm:flex justify-center mt-20  p-3 ">
+        <Link to="/login">
         <img src={cat} alt="cat" className="w-12 h-12 rounded-full"></img>
+        </Link>
         <div className=" pl-2">
         <span className="text-gray-800 dark:text-gray-100">Kueakun-K</span>
         <br/>

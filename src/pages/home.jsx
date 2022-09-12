@@ -1,9 +1,12 @@
-
+import cat from "../img/cat.png"
 
 const Home = () => {
   return (
-    <div >
-          <span>test home</span>
+    <div>
+      <img src={cat} alt="test"></img>
+      <img src={cat} alt="test"></img>
+      <img src={cat} alt="test"></img>
+      <span>test home</span>
     </div>
   );
 };
