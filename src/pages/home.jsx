@@ -1,6 +1,10 @@
+
 import cat from "../img/cat.png"
 
+
 const Home = () => {
+
+  
   return (
     <div>
       <img src={cat} alt="test"></img>

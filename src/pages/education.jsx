@@ -1,6 +1,7 @@
 
 
 const Education = () => {
+  
     return (
       <div>
         <span>test Education</span>

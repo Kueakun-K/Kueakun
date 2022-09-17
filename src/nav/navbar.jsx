@@ -20,9 +20,8 @@ import cat from "../img/cat.png"
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  const [activeIndex, setActiveIndex] = useState(localStorage.getItem("page") ?? "0")
   
-  const [activeIndex, setActiveIndex] = useState(0)
-
   return (
     <div className="grid grid-cols-6 bottom-0 fixed border-t-2 sm:border-t-0 sm:divide-x-0 sm:block  sm:w-44 sm:h-screen dark:bg-slate-900 bg-white  w-full">
       <div className=" hidden sm:block pt-6 mb-5">
@@ -34,48 +33,48 @@ const Navbar = () => {
         ></img>
       </div>
       
-      <Link to="/" onClick={() => setActiveIndex(0)}>
-        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === 0 ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
+      <Link to="/" onClick={() => {localStorage.setItem("page", 0); setActiveIndex(localStorage.getItem("page"))}}>
+        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === "0" ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
           <FontAwesomeIcon icon={faHouseChimney} size="xl" title="Home" />
           <span className="hidden sm:inline font-semibold text-lg ">
             &nbsp;&nbsp;&nbsp;Home
           </span>
         </div>
       </Link>
-      <Link to="/profile" onClick={() => setActiveIndex(1)}>
-        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === 1 ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
+      <Link to="/profile" onClick={() => {localStorage.setItem("page", 1); setActiveIndex(localStorage.getItem("page"))}}>
+        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === "1" ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
           <FontAwesomeIcon icon={faUserLarge} size="xl" title="Home" />
           <span className="hidden sm:inline font-semibold text-lg ">
             &nbsp;&nbsp;&nbsp;Profile
           </span>
         </div>
       </Link>
-      <Link to="/skill" onClick={() => setActiveIndex(2)}>
-        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === 2 ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
+      <Link to="/skill" onClick={() => {localStorage.setItem("page", 2); setActiveIndex(localStorage.getItem("page"))}}>
+        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === "2" ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
           <FontAwesomeIcon icon={faSkull} size="xl" title="Skill" />
           <span className="hidden sm:inline font-semibold text-lg ">
             &nbsp;&nbsp;&nbsp;Skill
           </span>
         </div>
       </Link>
-      <Link to="/education" className="hidden sm:block" onClick={() => setActiveIndex(3)}>
-        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === 3 ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
+      <Link to="/education" className="hidden sm:block" onClick={() => {localStorage.setItem("page", 3); setActiveIndex(localStorage.getItem("page"))}}>
+        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === "3" ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
           <FontAwesomeIcon icon={faGraduationCap} size="xl" title="Education" />
           <span className="hidden sm:inline font-semibold text-lg ">
             &nbsp;Education
           </span>
         </div>
       </Link>
-      <Link to="/contact" onClick={() => setActiveIndex(4)}>
-        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === 4 ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
+      <Link to="/contact" onClick={() => {localStorage.setItem("page", 4); setActiveIndex(localStorage.getItem("page"))}}>
+        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === "4" ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
           <FontAwesomeIcon icon={faComment} size="xl" title="Contact" />
           <span className="hidden sm:inline font-semibold text-lg ">
             &nbsp;&nbsp;Contact
           </span>
         </div>
       </Link>
-      <Link to="/todo" onClick={() => setActiveIndex(5)}>
-        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === 5 ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
+      <Link to="/todo" onClick={() => {localStorage.setItem("page", 5); setActiveIndex(localStorage.getItem("page"))}}>
+        <div className={`flex justify-center sm:justify-start py-4 sm:hover:pl-3 ${activeIndex === "5" ? "text-blue-500" : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"}`}>
           <FontAwesomeIcon icon={faTableList} size="xl" title="Todo" />
           <span className="hidden sm:inline font-semibold text-lg ">
             &nbsp;&nbsp;Todo

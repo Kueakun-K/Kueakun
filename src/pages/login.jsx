@@ -1,5 +1,5 @@
 import { useState } from "react"
-import {useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
 const Login = () => {
@@ -7,7 +7,7 @@ const Login = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const login = () => {
-        axios.post("http://localhost:1000/login", {
+        axios.post("https://kueakun.as.r.appspot.com/login", {
             username: username,
             password: password
         }).then((respond) => {
