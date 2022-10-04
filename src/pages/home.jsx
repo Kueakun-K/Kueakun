@@ -30,17 +30,17 @@ const Home = () => {
 
   const time = today.toLocaleTimeString(locale, { hour: 'numeric', hour12: true, minute: 'numeric',second: 'numeric' });
   return (
-    <div>
-      <div className="py-3 pl-4 text-xl font-bold  dark:text-gray-300 ">
+    <div className="h-screen">
+      <div className="pt-3  pl-6 text-xl font-bold  dark:text-gray-300 ">
         <span>Home</span>
       </div>
       <div className="p-4 border-b-2 border-gray-500">
-        <div className="flex bg-gray-800 rounded-2xl">
+        <div className="flex dark:bg-gray-800 bg-gray-200 rounded-2xl">
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full m-4"></img>
-          <div className="mt-6">
+          <div className="mt-7">
           <span className="dark:text-gray-300">What's happening?</span>
           <br/>
-          <div className="my-5 space-x-4 dark:text-white">
+          <div className="mb-5 mt-6 space-x-4 dark:text-white">
           <FontAwesomeIcon icon={faHouseChimney} size="lg" title="Home" />
           <FontAwesomeIcon icon={faUserLarge} size="lg" title="Profile" />
           <FontAwesomeIcon icon={faSkull} size="lg" title="Skill" />
