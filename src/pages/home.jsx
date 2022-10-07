@@ -10,7 +10,7 @@ import {
   faTableList,
   faHeart,
   faRetweet,
-  faShareAlt
+  faShareAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
@@ -55,7 +55,8 @@ const Home = () => {
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full m-4"></img>
           <div className="mt-7">
             <span className="dark:text-yellow-500">
-          Hello {day}. {wish}  &nbsp;{date} {time}</span>
+              Hello {day}. {wish} &nbsp;{date} {time}
+            </span>
             <br />
             <div className="mb-5 mt-6 space-x-4 dark:text-white">
               <FontAwesomeIcon icon={faHouseChimney} size="lg" title="Home" />
@@ -72,19 +73,27 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="p-5 border-b-2 border-gray-500 dark:text-white">
-        <div className="flex mb-5">
-            <img src={cat} alt="cat" className="w-12 h-12 rounded-full mr-5"></img>
-            <div>
-              <span>Kueakun-K</span>
-              <br/>
-              <span>1 DEC 2001</span>
-            </div>
+      <div className="p-4 border-b-2 border-gray-500 dark:text-white">
+        <div className="flex mb-4">
+          <img
+            src={cat}
+            alt="cat"
+            className="w-12 h-12 rounded-full mr-5"
+          ></img>
+          <div>
+            <span>Kueakun-K</span>
+            <br />
+            <span>1 DEC 2001</span>
+          </div>
         </div>
-        <div className="mb-3">
-          <span>Hello world! I am Thanawat Talabtong. I really love to coding all day all night. 
-            I want to be the World's most famous hacker. I have many friends, but I don't have any girlfriend. 
-            I have best friends in my life. They are stupid-bear 🐻 and stupid-dog 🐶. And they are comfort object. happy hacking :)</span>
+        <div className="mb-3 ml-6">
+          <span>
+            Hello world! I am Thanawat Talabtong. I really love to coding all
+            day all night. I want to be the World's most famous hacker. I have
+            many friends, but I don't have any girlfriend. I have best friends
+            in my life. They are stupid-bear 🐻 and stupid-dog 🐶. And they are
+            comfort object. happy hacking :)
+          </span>
         </div>
         <div className="mb-3">3</div>
         <div className="flex space-x-20 justify-center">
@@ -100,11 +109,46 @@ const Home = () => {
             <FontAwesomeIcon icon={faHeart} />
             <span>999</span>
           </div>
-          <div><FontAwesomeIcon icon={faShareAlt} /></div>
+          <div>
+            <FontAwesomeIcon icon={faShareAlt} />
+          </div>
         </div>
       </div>
-      <div className="p-5 border-b-2 border-gray-500 dark:text-white">
-        
+      <div className="p-4 border-b-2 border-gray-500 dark:text-white ">
+        <div className="flex mb-4">
+          <img
+            src={cat}
+            alt="cat"
+            className="w-12 h-12 rounded-full mr-5"
+          ></img>
+          <div>
+            <span>Kueakun-K</span>
+            <br />
+            <span>now</span>
+          </div>
+        </div>
+        <div className="mb-3 ml-6">
+          <div>📫 Contact me : <a onClick={() => {navigator.clipboard.writeText("Kueakun0112@gmail.com")}} className="text-yellow-500 cursor-pointer">Kueakun0112@gmail.com</a></div>
+          <div>⚡ Github : <a href="https://github.com/Kueakun-K" target="_blank" className="text-yellow-500">Kueakun-K</a></div>
+          <div>⚡ Instagram : <a href="https://www.instagram.com/kueakun.k/" target="_blank" className="text-yellow-500">kueakun.k</a></div>
+        </div>
+        <div className="flex space-x-20 justify-center">
+          <div className="space-x-2">
+            <FontAwesomeIcon icon={faComment} />
+            <span>999</span>
+          </div>
+          <div className="space-x-2">
+            <FontAwesomeIcon icon={faRetweet} />
+            <span>999</span>
+          </div>
+          <div className="space-x-2">
+            <FontAwesomeIcon icon={faHeart} />
+            <span>999</span>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faShareAlt} />
+          </div>
+        </div>
       </div>
       {/* <div>
         <span className="text-white">
