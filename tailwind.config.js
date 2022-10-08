@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
+      zIndex:{
+        '1': '1',
+      },
     },
     
   },

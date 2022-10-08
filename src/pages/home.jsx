@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import cat from "../img/cat.png";
+import gmail from "../img/gmail.png";
+import github from "../img/github.png";
+import instagram from "../img/instagram.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouseChimney,
@@ -16,6 +19,7 @@ import {
 const Home = () => {
   const locale = "en";
   const [today, setDate] = useState(new Date());
+  const [copy, setCopy] = useState("Copy")
   useEffect(() => {
     const timer = setInterval(() => {
       // Creates an interval which will update the current data every minute
@@ -128,9 +132,51 @@ const Home = () => {
           </div>
         </div>
         <div className="mb-3 ml-6">
-          <div>📫 Contact me : <a onClick={() => {navigator.clipboard.writeText("Kueakun0112@gmail.com")}} className="text-yellow-500 cursor-pointer">Kueakun0112@gmail.com</a></div>
-          <div>⚡ Github : <a href="https://github.com/Kueakun-K" target="_blank" className="text-yellow-500">Kueakun-K</a></div>
-          <div>⚡ Instagram : <a href="https://www.instagram.com/kueakun.k/" target="_blank" className="text-yellow-500">kueakun.k</a></div>
+          <div className="flex">
+            <img src={gmail} alt="Gmail" className="w-5 h-5" />
+            <span className="mx-2">Contact me : </span>
+            <div className="group relative">
+              <div
+                onMouseOut={() => {
+                  setCopy("Copy")
+                }}
+                onClick={() => {
+                  navigator.clipboard.writeText("Kueakun0112@gmail.com");
+                  setCopy("Copied")
+                }}
+                className="text-yellow-500 cursor-pointer"
+              >
+                Kueakun0112@gmail.com
+              </div>
+              <div className="invisible group-hover:visible absolute z-[1] bottom-8 left-20 text-sm bg-gray-800 rounded p-2 after:content-[''] after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-gray-800 after:border-x-transparent after:border-b-transparent ">
+                {copy}
+              </div>
+            </div>
+          </div>
+          <div className="flex">
+            <img src={github} alt="Github" className="w-5 h-5" />
+            <span className="mx-2">Github :</span>
+            <a
+              href="https://github.com/Kueakun-K"
+              target="_blank"
+              rel="noreferrer"
+              className="text-yellow-500"
+            >
+              Kueakun-K
+            </a>
+          </div>
+          <div className="flex">
+            <img src={instagram} alt="Instagram" className="w-5 h-5" />
+            <span className="mx-2">Instagram :</span>
+            <a
+              href="https://www.instagram.com/kueakun.k/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-yellow-500"
+            >
+              kueakun.k
+            </a>
+          </div>
         </div>
         <div className="flex space-x-20 justify-center">
           <div className="space-x-2">
