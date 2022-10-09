@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import cat from "../img/cat.png";
+import kuea from "../img/kuea.JPG";
 import gmail from "../img/gmail.png";
-import github from "../img/github.png";
+// import github from "../img/github.png";
 import instagram from "../img/instagram.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,10 +17,12 @@ import {
   faShareAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 const Home = () => {
   const locale = "en";
   const [today, setDate] = useState(new Date());
-  const [copy, setCopy] = useState("Copy")
+  const [copy, setCopy] = useState("Copy");
   useEffect(() => {
     const timer = setInterval(() => {
       // Creates an interval which will update the current data every minute
@@ -87,19 +90,18 @@ const Home = () => {
           <div>
             <span>Kueakun-K</span>
             <br />
-            <span>1 DEC 2001</span>
+            <span className="text-gray-500 text-sm">1 DEC 2001</span>
           </div>
         </div>
         <div className="mb-3 ml-6">
           <span>
-            Hello world! I am Thanawat Talabtong. I really love to coding all
-            day all night. I want to be the World's most famous hacker. I have
-            many friends, but I don't have any girlfriend. I have best friends
-            in my life. They are stupid-bear 🐻 and stupid-dog 🐶. And they are
-            comfort object. happy hacking :)
+            Hello world! I am <span className="text-yellow-500">Kueakun Niyomsit.</span> Now I'm studying computer
+            engineering 3rd year at KMITL. <br/><span className="text-yellow-500"> happy hacking :)</span>
           </span>
         </div>
-        <div className="mb-3">3</div>
+        <div className="flex mb-3 justify-center">
+          <img src={kuea} alt="Kuea" className=" w-3/5 h-3/5 rounded-lg" />
+        </div>
         <div className="flex space-x-20 justify-center">
           <div className="space-x-2">
             <FontAwesomeIcon icon={faComment} />
@@ -128,7 +130,7 @@ const Home = () => {
           <div>
             <span>Kueakun-K</span>
             <br />
-            <span>now</span>
+            <span className="text-gray-500 text-sm">now</span>
           </div>
         </div>
         <div className="mb-3 ml-6">
@@ -138,11 +140,11 @@ const Home = () => {
             <div className="group relative">
               <div
                 onMouseOut={() => {
-                  setCopy("Copy")
+                  setCopy("Copy");
                 }}
                 onClick={() => {
                   navigator.clipboard.writeText("Kueakun0112@gmail.com");
-                  setCopy("Copied")
+                  setCopy("Copied");
                 }}
                 className="text-yellow-500 cursor-pointer"
               >
@@ -154,7 +156,8 @@ const Home = () => {
             </div>
           </div>
           <div className="flex">
-            <img src={github} alt="Github" className="w-5 h-5" />
+            {/* <img src={github} alt="Github" className="w-5 h-5" /> */}
+            <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
             <span className="mx-2">Github :</span>
             <a
               href="https://github.com/Kueakun-K"
@@ -167,6 +170,7 @@ const Home = () => {
           </div>
           <div className="flex">
             <img src={instagram} alt="Instagram" className="w-5 h-5" />
+            {/* <FontAwesomeIcon icon={faInstagram} className="w-5 h-5" /> */}
             <span className="mx-2">Instagram :</span>
             <a
               href="https://www.instagram.com/kueakun.k/"
