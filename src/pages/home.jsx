@@ -54,7 +54,7 @@ const Home = () => {
 
       {/* header */}
       <div className="p-3 border-b-2 border-gray-500">
-        <div className="flex dark:bg-gray-800 bg-gray-200 rounded-2xl">
+        <div className="flex dark:bg-gray-800 bg-gray-300 rounded-2xl">
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full m-4"></img>
           <div className="flex dark:text-yellow-500 justify-center items-center">
             Hello {day}. {wish} &nbsp;{date} {time}

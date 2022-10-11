@@ -10,8 +10,8 @@
     }
 } */
 
-@layer base{
+/* @layer base{
     * {
-        @apply transition-all
+        @apply  transition transition-all
     }
-}
+} */
