@@ -26,6 +26,7 @@ const Navbar = () => {
 
   return (
     <div className="grid grid-cols-6 bottom-0 fixed border-t-2 sm:border-t-0  sm:divide-x-0 sm:block sm:w-52 sm:overflow-auto sm:scrollbar sm:top-0 dark:bg-slate-900 bg-gray-100  w-full">
+      {/* logo */}
       <div className=" hidden sm:block pt-6 mb-5">
         <img src={kueakun_b} alt="KUEAKUNB" className="dark:hidden h-16"></img>
         <img
@@ -35,6 +36,7 @@ const Navbar = () => {
         ></img>
       </div>
 
+      {/* home */}
       <Link
         to="/"
         onClick={() => {
@@ -55,6 +57,8 @@ const Navbar = () => {
           </span>
         </div>
       </Link>
+
+      {/* profile */}
       <Link
         to="/profile"
         onClick={() => {
@@ -65,7 +69,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "1"
-              ? "text-white"
+              ? "text-black dark:text-white"
               : " text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -75,6 +79,8 @@ const Navbar = () => {
           </span>
         </div>
       </Link>
+
+      {/* skill */}
       <Link
         to="/skill"
         onClick={() => {
@@ -85,7 +91,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "2"
-              ? "text-white"
+              ? "text-black dark:text-white"
               : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -95,6 +101,8 @@ const Navbar = () => {
           </span>
         </div>
       </Link>
+
+      {/* education */}
       <Link
         to="/education"
         className="hidden sm:block"
@@ -106,7 +114,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "3"
-              ? "text-white"
+              ? "text-black dark:text-white"
               : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -116,6 +124,8 @@ const Navbar = () => {
           </span>
         </div>
       </Link>
+
+      {/* contact */}
       <Link
         to="/contact"
         onClick={() => {
@@ -126,7 +136,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "4"
-              ? "text-white"
+              ? "text-black dark:text-white"
               : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -136,6 +146,8 @@ const Navbar = () => {
           </span>
         </div>
       </Link>
+
+      {/* todo */}
       <Link
         to="/todo"
         onClick={() => {
@@ -146,7 +158,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "5"
-              ? "text-white"
+              ? "text-black dark:text-white"
               : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -157,6 +169,7 @@ const Navbar = () => {
         </div>
       </Link>
 
+      {/* change mode */}
       <div className="flex justify-center sm:justify-start py-4 text-black dark:text-white">
         <div className="hidden sm:flex">
           <FontAwesomeIcon
@@ -187,6 +200,8 @@ const Navbar = () => {
           />
         </div>
       </div>
+
+      {/* profile */}
       <div className="hidden sm:flex justify-center mt-20  p-3 ">
         <Link to="/login">
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full"></img>
