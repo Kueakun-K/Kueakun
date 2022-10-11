@@ -60,11 +60,11 @@ const Home = () => {
       <div className="p-3 border-b-2 border-gray-500">
         <div className="flex dark:bg-gray-800 bg-gray-200 rounded-2xl">
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full m-4"></img>
-          <div className="mt-7">
-            <span className="dark:text-yellow-500">
+          <div className="flex dark:text-yellow-500 justify-center items-center">
+            {/* <span className=""> */}
               Hello {day}. {wish} &nbsp;{date} {time}
-            </span>
-            <br />
+            {/* </span> */}
+            {/* <br /> */}
             {/* <div className="mb-5 mt-6 space-x-4 dark:text-white">
               <FontAwesomeIcon icon={faHouseChimney} size="lg" title="Home" />
               <FontAwesomeIcon icon={faUserLarge} size="lg" title="Profile" />
@@ -139,7 +139,7 @@ const Home = () => {
           <div className="flex">
             <img src={gmail} alt="Gmail" className="w-5 h-5" />
             <span className="mx-2">Contact me : </span>
-            <div className="group relative">
+            <div className="group">
               <div
                 onMouseOut={() => {
                   setCopy("Copy");
@@ -148,13 +148,14 @@ const Home = () => {
                   navigator.clipboard.writeText("Kueakun0112@gmail.com");
                   setCopy("Copied");
                 }}
+                title={copy}
                 className="text-yellow-500 cursor-pointer"
               >
                 Kueakun0112@gmail.com
               </div>
-              <div className="invisible group-hover:visible absolute z-[1] bottom-8 left-20 text-sm bg-gray-800 rounded p-2 after:content-[''] after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-gray-800 after:border-x-transparent after:border-b-transparent ">
+              {/* <div className="invisible group-hover:visible absolute z-[1] bottom-8 left-20 text-sm bg-gray-800 rounded p-2 after:content-[''] after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-gray-800 after:border-x-transparent after:border-b-transparent ">
                 {copy}
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex">

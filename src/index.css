@@ -9,3 +9,9 @@
         @apply bg-slate-900
     }
 } */
+
+@layer base{
+    * {
+        @apply transition-all
+    }
+}
