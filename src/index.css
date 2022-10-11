@@ -15,3 +15,26 @@
         @apply  transition transition-all
     }
 } */
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+      width: 5px;
+      /* height: 20px; */
+    }
+  
+    .scrollbar::-webkit-scrollbar-track {
+      /* border-radius: 100vh; */
+      @apply bg-slate-900
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb {
+      /* background: black;
+      border-radius: 100vh;
+      border: 3px solid black; */
+      @apply border-4 border-solid border-slate-900
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+      background: black;
+    }
+  }

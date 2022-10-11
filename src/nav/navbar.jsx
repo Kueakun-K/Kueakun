@@ -25,7 +25,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="grid grid-cols-6 bottom-0 fixed border-t-2 sm:border-t-0  sm:divide-x-0 sm:block sm:w-52 sm:h-screen dark:bg-slate-900 bg-gray-100  w-full">
+    <div className="grid grid-cols-6 bottom-0 fixed border-t-2 sm:border-t-0  sm:divide-x-0 sm:block sm:w-52 sm:overflow-auto sm:scrollbar sm:top-0 dark:bg-slate-900 bg-gray-100  w-full">
       <div className=" hidden sm:block pt-6 mb-5">
         <img src={kueakun_b} alt="KUEAKUNB" className="dark:hidden h-16"></img>
         <img
