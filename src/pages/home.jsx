@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 import cat from "../img/cat.png";
-import kuea from "../img/kuea.JPG";
+import kuea from "../img/kueaCrop.JPG";
 import gmail from "../img/gmail.png";
 // import github from "../img/github.png";
 import instagram from "../img/instagram.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHouseChimney,
-  faUserLarge,
-  faSkull,
-  faGraduationCap,
+  // faHouseChimney,
+  // faUserLarge,
+  // faSkull,
+  // faGraduationCap,
   faComment,
-  faTableList,
+  // faTableList,
   faHeart,
   faRetweet,
   faShareAlt,
@@ -54,10 +54,10 @@ const Home = () => {
   });
   return (
     <div className="h-full">
-      <div className="pt-3  pl-6 text-xl font-bold  dark:text-white">
+      <div className="pt-2  pl-5 text-xl font-bold  dark:text-white">
         <span>Home</span>
       </div>
-      <div className="p-4 border-b-2 border-gray-500">
+      <div className="p-3 border-b-2 border-gray-500">
         <div className="flex dark:bg-gray-800 bg-gray-200 rounded-2xl">
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full m-4"></img>
           <div className="mt-7">
@@ -65,7 +65,7 @@ const Home = () => {
               Hello {day}. {wish} &nbsp;{date} {time}
             </span>
             <br />
-            <div className="mb-5 mt-6 space-x-4 dark:text-white">
+            {/* <div className="mb-5 mt-6 space-x-4 dark:text-white">
               <FontAwesomeIcon icon={faHouseChimney} size="lg" title="Home" />
               <FontAwesomeIcon icon={faUserLarge} size="lg" title="Profile" />
               <FontAwesomeIcon icon={faSkull} size="lg" title="Skill" />
@@ -76,12 +76,12 @@ const Home = () => {
               />
               <FontAwesomeIcon icon={faComment} size="lg" title="Contact" />
               <FontAwesomeIcon icon={faTableList} size="lg" title="Todo" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="p-4 border-b-2 border-gray-500 dark:text-white">
-        <div className="flex mb-4">
+      <div className="p-3 border-b-2 border-gray-500 dark:text-white">
+        <div className="flex mb-3">
           <img
             src={cat}
             alt="cat"
@@ -95,12 +95,14 @@ const Home = () => {
         </div>
         <div className="mb-3 ml-6">
           <span>
-            Hello world! I am <span className="text-yellow-500">Kueakun Niyomsit.</span> Now I'm studying computer
-            engineering 3rd year at KMITL. <br/><span className="text-yellow-500"> happy hacking :)</span>
+            Hello world! I am{" "}
+            <span className="text-yellow-500">Kueakun Niyomsit.</span> Now I'm
+            studying computer engineering 3<sup>rd</sup>  year at<span className="text-orange-600"> KMITL.</span> <br />
+            <span className="text-yellow-500"> happy hacking :)</span>
           </span>
         </div>
         <div className="flex mb-3 justify-center">
-          <img src={kuea} alt="Kuea" className=" w-3/5 h-3/5 rounded-lg" />
+          <img src={kuea} alt="Kuea" className=" w-4/12 h-3/12 rounded-lg" />
         </div>
         <div className="flex space-x-20 justify-center">
           <div className="space-x-2">
@@ -120,8 +122,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="p-4 border-b-2 border-gray-500 dark:text-white ">
-        <div className="flex mb-4">
+      <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
+        <div className="flex mb-3">
           <img
             src={cat}
             alt="cat"
@@ -133,7 +135,7 @@ const Home = () => {
             <span className="text-gray-500 text-sm">now</span>
           </div>
         </div>
-        <div className="mb-3 ml-6">
+        <div className=" ml-6">
           <div className="flex">
             <img src={gmail} alt="Gmail" className="w-5 h-5" />
             <span className="mx-2">Contact me : </span>
@@ -182,7 +184,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="flex space-x-20 justify-center">
+        {/* <div className="flex space-x-20 justify-center">
           <div className="space-x-2">
             <FontAwesomeIcon icon={faComment} />
             <span>999</span>
@@ -198,7 +200,7 @@ const Home = () => {
           <div>
             <FontAwesomeIcon icon={faShareAlt} />
           </div>
-        </div>
+        </div> */}
       </div>
       {/* <div>
         <span className="text-white">
