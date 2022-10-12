@@ -56,7 +56,7 @@ const Home = () => {
       <div className="p-3 border-b-2 border-gray-500">
         <div className="flex dark:bg-gray-800 bg-gray-300 rounded-2xl">
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full m-4"></img>
-          <div className="flex dark:text-yellow-500 justify-center items-center">
+          <div className="flex font-medium text-orange-500 dark:text-yellow-500 justify-center items-center">
             Hello {day}. {wish} &nbsp;{date} {time}
           </div>
         </div>
@@ -82,10 +82,10 @@ const Home = () => {
         <div className="mb-3 mx-5">
           <span>
             Hello world! I am{" "}
-            <span className="text-yellow-500">Kueakun Niyomsit.</span> Now I'm
+            <span className="font-medium text-orange-500 dark:text-yellow-500">Kueakun Niyomsit.</span> Now I'm
             studying computer engineering 3<sup>rd</sup> year at
-            <span className="text-orange-600"> KMITL.</span> <br />
-            <span className="text-yellow-500"> happy hacking :)</span>
+            <span className="font-medium text-yellow-500 dark:text-orange-600"> KMITL.</span> <br />
+            <span className="font-medium text-orange-500 dark:text-yellow-500"> happy hacking :)</span>
           </span>
         </div>
 
@@ -148,7 +148,7 @@ const Home = () => {
                   setCopy("Copied");
                 }}
                 title={copy}
-                className="text-yellow-500 cursor-pointer"
+                className="font-medium text-orange-500 dark:text-yellow-500 cursor-pointer"
               >
                 Kueakun0112@gmail.com
               </div>
@@ -161,7 +161,7 @@ const Home = () => {
               href="https://github.com/Kueakun-K"
               target="_blank"
               rel="noreferrer"
-              className="text-yellow-500"
+              className="font-medium text-orange-500 dark:text-yellow-500"
             >
               Kueakun-K
             </a>
@@ -173,7 +173,7 @@ const Home = () => {
               href="https://www.instagram.com/kueakun.k/"
               target="_blank"
               rel="noreferrer"
-              className="text-yellow-500"
+              className="font-medium text-orange-500 dark:text-yellow-500"
             >
               kueakun.k
             </a>

@@ -47,7 +47,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "0"
-              ? "text-black dark:text-white"
+              ? "text-red-500 dark:text-yellow-500"
               : " text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -69,7 +69,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "1"
-              ? "text-black dark:text-white"
+              ? "text-red-500 dark:text-yellow-500"
               : " text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -91,7 +91,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "2"
-              ? "text-black dark:text-white"
+              ? "text-red-500 dark:text-yellow-500"
               : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -114,7 +114,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "3"
-              ? "text-black dark:text-white"
+              ? "text-red-500 dark:text-yellow-500"
               : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -136,7 +136,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "4"
-              ? "text-black dark:text-white"
+              ? "text-red-500 dark:text-yellow-500"
               : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
@@ -158,7 +158,7 @@ const Navbar = () => {
         <div
           className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
             activeIndex === "5"
-              ? "text-black dark:text-white"
+              ? "text-red-500 dark:text-yellow-500"
               : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
           }`}
         >
