@@ -10,10 +10,13 @@ const Login = () => {
         axios.post("https://kueakun.as.r.appspot.com/login", {
             username: username,
             password: password
-        }).then((respond) => {
-            if (respond.data !== false){
-                console.log(respond.data)
+        }).then((res) => {
+            if (res.data !== false){
+                console.log(res.data)
                 navigate('../todo')
+            }
+            else{
+                console.log(res.data)
             }
         })
     }

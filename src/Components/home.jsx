@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
-import cat from "../img/cat.png";
-import kuea from "../img/kueaCrop.JPG";
-import gmail from "../img/gmail.png";
-import instagram from "../img/instagram.png";
+import cat from "../Assets/cat.png";
+import kuea from "../Assets/kueaCrop.JPG";
+import gmail from "../Assets/gmail.png";
+import instagram from "../Assets/instagram.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

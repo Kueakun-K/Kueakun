@@ -12,16 +12,16 @@ import {
   faGhost,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { changeMode } from "../redux/reducers/switchMode";
+import { changeMode } from "../Services/reducers/switchMode";
 
-import kueakun_b from "../img/kueakun_b.png";
-import kueakun_w from "../img/kueakun_w.png";
-import cat from "../img/cat.png";
+import kueakun_b from "../Assets/kueakun_b.png";
+import kueakun_w from "../Assets/kueakun_w.png";
+import cat from "../Assets/cat.png";
 
 const Navbar = () => {
   const dispatch = useDispatch();
   const [activeIndex, setActiveIndex] = useState(
-    sessionStorage.getItem("page") ?? "0"
+    localStorage.getItem("page") ?? "0"
   );
 
   return (
@@ -40,8 +40,8 @@ const Navbar = () => {
       <Link
         to="/"
         onClick={() => {
-          sessionStorage.setItem("page", 0);
-          setActiveIndex(sessionStorage.getItem("page"));
+          localStorage.setItem("page", 0);
+          setActiveIndex(localStorage.getItem("page"));
         }}
       >
         <div
@@ -62,8 +62,8 @@ const Navbar = () => {
       <Link
         to="/profile"
         onClick={() => {
-          sessionStorage.setItem("page", 1);
-          setActiveIndex(sessionStorage.getItem("page"));
+          localStorage.setItem("page", 1);
+          setActiveIndex(localStorage.getItem("page"));
         }}
       >
         <div
@@ -84,8 +84,8 @@ const Navbar = () => {
       <Link
         to="/skill"
         onClick={() => {
-          sessionStorage.setItem("page", 2);
-          setActiveIndex(sessionStorage.getItem("page"));
+          localStorage.setItem("page", 2);
+          setActiveIndex(localStorage.getItem("page"));
         }}
       >
         <div
@@ -107,8 +107,8 @@ const Navbar = () => {
         to="/education"
         className="hidden sm:block"
         onClick={() => {
-          sessionStorage.setItem("page", 3);
-          setActiveIndex(sessionStorage.getItem("page"));
+          localStorage.setItem("page", 3);
+          setActiveIndex(localStorage.getItem("page"));
         }}
       >
         <div
@@ -129,8 +129,8 @@ const Navbar = () => {
       <Link
         to="/contact"
         onClick={() => {
-          sessionStorage.setItem("page", 4);
-          setActiveIndex(sessionStorage.getItem("page"));
+          localStorage.setItem("page", 4);
+          setActiveIndex(localStorage.getItem("page"));
         }}
       >
         <div
@@ -151,8 +151,8 @@ const Navbar = () => {
       <Link
         to="/todo"
         onClick={() => {
-          sessionStorage.setItem("page", 5);
-          setActiveIndex(sessionStorage.getItem("page"));
+          localStorage.setItem("page", 5);
+          setActiveIndex(localStorage.getItem("page"));
         }}
       >
         <div
