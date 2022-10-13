@@ -1,6 +1,6 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouseChimney,
@@ -20,9 +20,12 @@ import cat from "../Assets/cat.png";
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const [activeIndex, setActiveIndex] = useState(
-    localStorage.getItem("page") ?? "0"
-  );
+  let activeLink = "text-red-500 dark:text-yellow-500";
+  let notActiveLink =
+    "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white";
+  let navBlock =
+    "flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3";
+  let navText = "hidden sm:inline font-semibold text-lg";
 
   return (
     <div className="grid grid-cols-6 bottom-0 fixed border-t-2 sm:border-t-0  sm:divide-x-0 sm:block sm:w-52 sm:overflow-auto sm:scrollbar sm:top-0 dark:bg-slate-900 bg-gray-100  w-full">
@@ -37,137 +40,74 @@ const Navbar = () => {
       </div>
 
       {/* home */}
-      <Link
+      <NavLink
         to="/"
-        onClick={() => {
-          localStorage.setItem("page", 0);
-          setActiveIndex(localStorage.getItem("page"));
-        }}
+        className={({ isActive }) => (isActive ? activeLink : notActiveLink)}
       >
-        <div
-          className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
-            activeIndex === "0"
-              ? "text-red-500 dark:text-yellow-500"
-              : " text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
-          }`}
-        >
+        <div className={navBlock}>
           <FontAwesomeIcon icon={faHouseChimney} size="xl" title="Home" />
-          <span className="hidden sm:inline font-semibold text-lg ">
-            &nbsp;&nbsp;&nbsp;Home
-          </span>
+          <span className={navText}>&nbsp;&nbsp;&nbsp;Home</span>
         </div>
-      </Link>
+      </NavLink>
 
       {/* profile */}
-      <Link
+      <NavLink
         to="/profile"
-        onClick={() => {
-          localStorage.setItem("page", 1);
-          setActiveIndex(localStorage.getItem("page"));
-        }}
+        className={({ isActive }) => (isActive ? activeLink : notActiveLink)}
       >
-        <div
-          className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
-            activeIndex === "1"
-              ? "text-red-500 dark:text-yellow-500"
-              : " text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
-          }`}
-        >
+        <div className={navBlock}>
           <FontAwesomeIcon icon={faUserLarge} size="xl" title="Profile" />
-          <span className="hidden sm:inline font-semibold text-lg ">
-            &nbsp;&nbsp;&nbsp;Profile
-          </span>
+          <span className={navText}>&nbsp;&nbsp;&nbsp;Profile</span>
         </div>
-      </Link>
+      </NavLink>
 
       {/* skill */}
-      <Link
+      <NavLink
         to="/skill"
-        onClick={() => {
-          localStorage.setItem("page", 2);
-          setActiveIndex(localStorage.getItem("page"));
-        }}
+        className={({ isActive }) => (isActive ? activeLink : notActiveLink)}
       >
-        <div
-          className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
-            activeIndex === "2"
-              ? "text-red-500 dark:text-yellow-500"
-              : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
-          }`}
-        >
+        <div className={navBlock}>
           <FontAwesomeIcon icon={faSkull} size="xl" title="Skill" />
-          <span className="hidden sm:inline font-semibold text-lg ">
-            &nbsp;&nbsp;&nbsp;Skill
-          </span>
+          <span className={navText}>&nbsp;&nbsp;&nbsp;Skill</span>
         </div>
-      </Link>
+      </NavLink>
 
       {/* education */}
-      <Link
+      <NavLink
         to="/education"
-        className="hidden sm:block"
-        onClick={() => {
-          localStorage.setItem("page", 3);
-          setActiveIndex(localStorage.getItem("page"));
-        }}
+        className={({ isActive }) =>
+          isActive
+            ? activeLink + " hidden sm:block"
+            : notActiveLink + " hidden sm:block"
+        }
       >
-        <div
-          className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
-            activeIndex === "3"
-              ? "text-red-500 dark:text-yellow-500"
-              : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
-          }`}
-        >
+        <div className={navBlock}>
           <FontAwesomeIcon icon={faGraduationCap} size="xl" title="Education" />
-          <span className="hidden sm:inline font-semibold text-lg ">
-            &nbsp;Education
-          </span>
+          <span className={navText}>&nbsp;Education</span>
         </div>
-      </Link>
+      </NavLink>
 
       {/* contact */}
-      <Link
+      <NavLink
         to="/contact"
-        onClick={() => {
-          localStorage.setItem("page", 4);
-          setActiveIndex(localStorage.getItem("page"));
-        }}
+        className={({ isActive }) => (isActive ? activeLink : notActiveLink)}
       >
-        <div
-          className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
-            activeIndex === "4"
-              ? "text-red-500 dark:text-yellow-500"
-              : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
-          }`}
-        >
+        <div className={navBlock}>
           <FontAwesomeIcon icon={faComment} size="xl" title="Contact" />
-          <span className="hidden sm:inline font-semibold text-lg ">
-            &nbsp;&nbsp;Contact
-          </span>
+          <span className={navText}>&nbsp;&nbsp;Contact</span>
         </div>
-      </Link>
+      </NavLink>
 
       {/* todo */}
-      <Link
+      <NavLink
         to="/todo"
-        onClick={() => {
-          localStorage.setItem("page", 5);
-          setActiveIndex(localStorage.getItem("page"));
-        }}
+        className={({ isActive }) => (isActive ? activeLink : notActiveLink)}
       >
-        <div
-          className={`flex justify-center sm:justify-start py-4 hover:transition-all sm:hover:pl-3 ${
-            activeIndex === "5"
-              ? "text-red-500 dark:text-yellow-500"
-              : "text-gray-800 sm:hover:text-black dark:text-gray-300 dark:sm:hover:text-white"
-          }`}
-        >
+        <div className={navBlock}>
           <FontAwesomeIcon icon={faTableList} size="xl" title="Todo" />
-          <span className="hidden sm:inline font-semibold text-lg ">
-            &nbsp;&nbsp;Todo
-          </span>
+          <span className={navText}>&nbsp;&nbsp;Todo</span>
         </div>
-      </Link>
+      </NavLink>
 
       {/* change mode */}
       <div className="flex justify-center sm:justify-start py-4 text-black dark:text-white">
@@ -203,9 +143,9 @@ const Navbar = () => {
 
       {/* profile */}
       <div className="hidden sm:flex justify-center mt-20  p-3 ">
-        <Link to="/login">
+        <NavLink to="/login">
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full"></img>
-        </Link>
+        </NavLink>
         <div className=" pl-2">
           <span className="text-gray-800 dark:text-gray-100">Kueakun-K</span>
           <br />
