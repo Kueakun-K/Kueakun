@@ -23,7 +23,7 @@ const Home = () => {
       setDate(new Date());
     }, 1000);
     return () => {
-      clearInterval(timer); 
+      clearInterval(timer);
     };
   }, []);
 
@@ -82,20 +82,25 @@ const Home = () => {
         <div className="mb-3 mx-5">
           <span>
             Hello world! I am{" "}
-            <span className="font-medium text-orange-500 dark:text-yellow-500">Kueakun Niyomsit.</span> Now I'm
-            studying computer engineering 3<sup>rd</sup> year at
-            <span className="font-medium text-yellow-500 dark:text-orange-600"> KMITL.</span> <br />
-            <span className="font-medium text-orange-500 dark:text-yellow-500"> happy hacking :)</span>
+            <span className="font-medium text-orange-500 dark:text-yellow-500">
+              Kueakun Niyomsit.
+            </span>{" "}
+            Now I'm studying computer engineering 3<sup>rd</sup> year at
+            <span className="font-medium text-yellow-500 dark:text-orange-600">
+              {" "}
+              KMITL.
+            </span>{" "}
+            <br />
+            <span className="font-medium text-orange-500 dark:text-yellow-500">
+              {" "}
+              happy hacking :)
+            </span>
           </span>
         </div>
 
         {/* img */}
         <div className="flex mb-3 justify-center mx-5">
-          <img
-            src={kuea}
-            alt="Kuea"
-            className="sm:w-8/12 md:w-6/12 lg:w-6/12 xl:w-4/12 rounded-lg "
-          />
+          <img src={kuea} alt="Kuea" className="w-9/12 rounded-lg " />
         </div>
 
         {/* icon */}
@@ -134,7 +139,7 @@ const Home = () => {
           </div>
         </div>
         {/* text */}
-        <div className=" ml-6">
+        <div className=" ml-6 mb-3">
           <div className="flex">
             <img src={gmail} alt="Gmail" className="w-5 h-5" />
             <span className="mx-2">Contact : </span>
@@ -177,6 +182,25 @@ const Home = () => {
             >
               kueakun.k
             </a>
+          </div>
+        </div>
+        
+        {/* icon */}
+        <div className="flex mx-5 ">
+          <div className="flex w-1/4 justify-center items-center">
+            <FontAwesomeIcon icon={faComment} />
+            <span>&nbsp;999</span>
+          </div>
+          <div className="flex w-1/4 justify-center items-center">
+            <FontAwesomeIcon icon={faRetweet} />
+            <span>&nbsp;999</span>
+          </div>
+          <div className="flex w-1/4 justify-center items-center">
+            <FontAwesomeIcon icon={faHeart} />
+            <span>&nbsp;999</span>
+          </div>
+          <div className="flex w-1/4 justify-center items-center">
+            <FontAwesomeIcon icon={faShareAlt} />
           </div>
         </div>
       </div>
