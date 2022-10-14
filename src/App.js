@@ -8,15 +8,16 @@ import {
 } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
-import Profile from "./Components/Profile";
-import Skill from "./Components/Skill";
-import Education from "./Components/Education";
-import Contact from "./Components/Contact";
-import Todo from "./Components/Todo";
-import Login from "./Components/Login";
-import Error from "./Components/Error";
+import Navbar from "./Pages/Navbar";
+import Home from "./Pages/Home";
+import Profile from "./Pages/Profile";
+import Skill from "./Pages/Skill";
+import Education from "./Pages/Education";
+import Contact from "./Pages/Contact";
+import Todo from "./Pages/Todo";
+import Login from "./Pages/Login";
+import Error from "./Pages/Error";
+import IconFooter from "./Components/IconFooter";
 import { Counter } from "./Services/features/counter/Counter";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
               <Route path="/todo" element={<Todo/>}  />
               <Route path="/login" element={<Login />} />
               <Route path="/counter" element={<Counter />} />
+              <Route path="/test" element={<IconFooter/>} />
               <Route path="*" element={<Error/>} />
             </Routes>
           </div>

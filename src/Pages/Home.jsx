@@ -5,13 +5,9 @@ import kuea from "../Assets/kueaCrop.JPG";
 import gmail from "../Assets/gmail.png";
 import instagram from "../Assets/instagram.png";
 
+import IconFooter from "../Components/IconFooter";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faComment,
-  faHeart,
-  faRetweet,
-  faShareAlt,
-} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
@@ -104,23 +100,7 @@ const Home = () => {
         </div>
 
         {/* icon */}
-        <div className="flex mx-5 ">
-          <div className="flex w-1/4 justify-center items-center">
-            <FontAwesomeIcon icon={faComment} />
-            <span>&nbsp;999</span>
-          </div>
-          <div className="flex w-1/4 justify-center items-center">
-            <FontAwesomeIcon icon={faRetweet} />
-            <span>&nbsp;999</span>
-          </div>
-          <div className="flex w-1/4 justify-center items-center">
-            <FontAwesomeIcon icon={faHeart} />
-            <span>&nbsp;999</span>
-          </div>
-          <div className="flex w-1/4 justify-center items-center">
-            <FontAwesomeIcon icon={faShareAlt} />
-          </div>
-        </div>
+        <IconFooter/>
       </div>
 
       {/* container 2 */}
@@ -186,23 +166,7 @@ const Home = () => {
         </div>
         
         {/* icon */}
-        <div className="flex mx-5 ">
-          <div className="flex w-1/4 justify-center items-center">
-            <FontAwesomeIcon icon={faComment} />
-            <span>&nbsp;999</span>
-          </div>
-          <div className="flex w-1/4 justify-center items-center">
-            <FontAwesomeIcon icon={faRetweet} />
-            <span>&nbsp;999</span>
-          </div>
-          <div className="flex w-1/4 justify-center items-center">
-            <FontAwesomeIcon icon={faHeart} />
-            <span>&nbsp;999</span>
-          </div>
-          <div className="flex w-1/4 justify-center items-center">
-            <FontAwesomeIcon icon={faShareAlt} />
-          </div>
-        </div>
+        <IconFooter/>
       </div>
     </div>
   );
