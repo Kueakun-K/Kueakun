@@ -5,6 +5,7 @@ import kuea from "../Assets/kueaCrop.JPG";
 import gmail from "../Assets/gmail.png";
 import instagram from "../Assets/instagram.png";
 
+import ProfileHeader from "../Components/ProfileHeader";
 import IconFooter from "../Components/IconFooter";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -61,18 +62,7 @@ const Home = () => {
       {/* container 1 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
         {/* profile */}
-        <div className="flex mb-3">
-          <img
-            src={cat}
-            alt="cat"
-            className="w-12 h-12 rounded-full mr-5"
-          ></img>
-          <div>
-            <span>Kueakun-K</span>
-            <br />
-            <span className="text-gray-500 text-sm">1 DEC 2001</span>
-          </div>
-        </div>
+        <ProfileHeader text="1 DEC 2001"/>
 
         {/* text */}
         <div className="mb-3 mx-5">
@@ -106,18 +96,7 @@ const Home = () => {
       {/* container 2 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
         {/* profile */}
-        <div className="flex mb-3">
-          <img
-            src={cat}
-            alt="cat"
-            className="w-12 h-12 rounded-full mr-5"
-          ></img>
-          <div>
-            <span>Kueakun-K</span>
-            <br />
-            <span className="text-gray-500 text-sm">now</span>
-          </div>
-        </div>
+        <ProfileHeader text="now" />
         {/* text */}
         <div className=" ml-6 mb-3">
           <div className="flex">
