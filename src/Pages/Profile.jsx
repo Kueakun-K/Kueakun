@@ -2,7 +2,11 @@ import React from "react";
 import Nebula from "../Assets/NebulaRe.png";
 import Cat from "../Assets/cat.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faEnvelope,
+  faCalendarAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faFacebook,
@@ -43,20 +47,26 @@ const Profile = () => {
         {/* profile img */}
 
         {/* contact */}
-        <div className="absolute flex top-[16.5rem] right-12 z-[3] space-x-3 dark:text-white">
-          <a href="https://github.com/Kueakun-K"
-              target="_blank"
-              rel="noreferrer">
+        <div className="absolute flex top-[16.5rem] right-12 z-[3] space-x-3 dark:text-gray-100">
+          <a
+            href="https://github.com/Kueakun-K"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} size="2xl" />
           </a>
-          <a href="https://www.instagram.com/kueakun.k/"
-              target="_blank"
-              rel="noreferrer">
+          <a
+            href="https://www.instagram.com/kueakun.k/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} size="2xl" />
           </a>
-          <a href="https://www.instagram.com/kueakun.k/"
-              target="_blank"
-              rel="noreferrer">
+          <a
+            href="https://www.instagram.com/kueakun.k/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faFacebook} size="2xl" />
           </a>
           <a href="mailto:Kueakun0112@gmail.com">
@@ -67,8 +77,27 @@ const Profile = () => {
       </div>
       {/* img + contact*/}
 
-      {/* info name */}
-      <div></div>
+      {/* infomation */}
+      <div className=" mx-4  font-medium">
+        <div className="dark:text-white text-xl">Kueakun-K</div>
+        <div className="text-gray-500 mt-1">@kueakun Niyomsit</div>
+        <div className="text-gray-500 mt-1">
+          <FontAwesomeIcon icon={faCalendarAlt} />
+          <span> Joined Dec 2001</span>
+        </div>
+        <div className="grid grid-cols-2 mt-1">
+          <div className="">
+            <span className=" dark:text-gray-100 ">63010095</span>
+            <span className="text-gray-500 "> Student id</span>
+          </div>
+          <div>
+            <span className=" dark:text-gray-100 ">Engineering</span>
+            <span className="text-gray-500 "> Faculty</span>
+          </div>
+        </div>
+      </div>
+      {/* infomation */}
+
       {/* nav profile */}
       <div></div>
     </div>
