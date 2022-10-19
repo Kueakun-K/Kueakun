@@ -52,7 +52,7 @@ const Navbar = () => {
 
       {/* profile */}
       <NavLink
-        to="/profile"
+        to="/info/profile"
         className={({ isActive }) => (isActive ? activeLink : notActiveLink)}
       >
         <div className={navBlock}>
@@ -63,7 +63,7 @@ const Navbar = () => {
 
       {/* skill */}
       <NavLink
-        to="/skill"
+        to="/info/skill"
         className={({ isActive }) => (isActive ? activeLink : notActiveLink)}
       >
         <div className={navBlock}>
@@ -74,7 +74,7 @@ const Navbar = () => {
 
       {/* education */}
       <NavLink
-        to="/education"
+        to="/info/education"
         className={({ isActive }) =>
           isActive
             ? activeLink + " hidden sm:block"
