@@ -105,7 +105,7 @@ const Information = () => {
           to="/info/profile"
           className={({ isActive }) =>
             (isActive
-              ? "text-yellow-500 border-b-2 border-yellow-500"
+                ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
               : " border-0 text-gray-500") + " text-center py-3"
           }
         >
@@ -115,7 +115,7 @@ const Information = () => {
           to="/info/skill"
           className={({ isActive }) =>
             (isActive
-              ? "text-yellow-500 border-b-2 border-yellow-500"
+              ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
               : " border-0 text-gray-500") + " text-center py-3"
           }
         >
@@ -125,7 +125,7 @@ const Information = () => {
           to="/info/education"
           className={({ isActive }) =>
             (isActive
-              ? "text-yellow-500 border-b-2 border-yellow-500"
+                ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
               : " border-0 text-gray-500") + " text-center py-3"
           }
         >
