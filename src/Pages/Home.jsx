@@ -62,7 +62,7 @@ const Home = () => {
       {/* container 1 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
         {/* profile */}
-        <ProfileHeader text="1 DEC 2001"/>
+        <ProfileHeader text="1 DEC 2001" />
 
         {/* text */}
         <div className="mb-3 mx-5">
@@ -90,7 +90,7 @@ const Home = () => {
         </div>
 
         {/* icon */}
-        <IconFooter/>
+        <IconFooter />
       </div>
 
       {/* container 2 */}
@@ -144,9 +144,9 @@ const Home = () => {
             </a>
           </div>
         </div>
-        
+
         {/* icon */}
-        <IconFooter/>
+        <IconFooter />
       </div>
     </div>
   );
