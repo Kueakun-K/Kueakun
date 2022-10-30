@@ -18,8 +18,9 @@ const Information = () => {
   return (
     <div>
       {/* header */}
-      <div className="flex fixed top-0 bg-gray-100 dark:bg-slate-900 w-full sm:w-max z-10">
-        <div className="text-red-500 dark:text-yellow-500 my-4 mx-5 ">
+
+      <div className="flex fixed  top-0 bg-gray-100 dark:bg-slate-900 w-full z-10">
+        <div className=" text-red-500 dark:text-yellow-500 my-4 mx-5 ">
           <FontAwesomeIcon icon={faArrowLeft} size="lg" />
         </div>
         <div className="my-auto">
@@ -27,6 +28,7 @@ const Information = () => {
           <div className="text-gray-500">Kueakun Niyomsit</div>
         </div>
       </div>
+
       {/* header */}
 
       {/* img + contact*/}
@@ -105,7 +107,7 @@ const Information = () => {
           to="/info/profile"
           className={({ isActive }) =>
             (isActive
-                ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
+              ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
               : " border-0 text-gray-500") + " text-center py-3"
           }
         >
@@ -125,7 +127,7 @@ const Information = () => {
           to="/info/education"
           className={({ isActive }) =>
             (isActive
-                ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
+              ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
               : " border-0 text-gray-500") + " text-center py-3"
           }
         >
