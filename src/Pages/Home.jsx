@@ -14,7 +14,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   const locale = "en";
   const [today, setDate] = useState(new Date());
-  const [copy, setCopy] = useState("Copy");
+  // const [copy, setCopy] = useState("Copy");
   useEffect(() => {
     const timer = setInterval(() => {
       setDate(new Date());
@@ -103,19 +103,20 @@ const Home = () => {
             <img src={gmail} alt="Gmail" className="w-5 h-5" />
             <span className="mx-2">Contact : </span>
             <div className="group">
-              <div
-                onMouseOut={() => {
-                  setCopy("Copy");
-                }}
-                onClick={() => {
-                  navigator.clipboard.writeText("Kueakun0112@gmail.com");
-                  setCopy("Copied");
-                }}
-                title={copy}
+              <a
+                // onMouseOut={() => {
+                //   setCopy("Copy");
+                // }}
+                // onClick={() => {
+                //   navigator.clipboard.writeText("Kueakun0112@gmail.com");
+                //   setCopy("Copied");
+                // }}
+                // title={copy}
+                href="mailto:Kueakun0112@gmail.com"
                 className="font-medium text-orange-500 dark:text-yellow-500 cursor-pointer"
               >
                 Kueakun0112@gmail.com
-              </div>
+              </a>
             </div>
           </div>
           <div className="flex">
