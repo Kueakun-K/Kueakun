@@ -102,13 +102,13 @@ const Information = () => {
       {/* infomation */}
 
       {/* nav profile */}
-      <div className="grid grid-cols-3 font-semibold">
+      <div className="grid grid-cols-3 font-semibold border-b-2 border-gray-500">
         <NavLink
           to="/info/profile"
           className={({ isActive }) =>
             (isActive
-              ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
-              : " border-0 text-gray-500") + " text-center py-3"
+              ? "text-red-500 dark:text-yellow-500 border-b-[3px] border-red-500 dark:border-yellow-500"
+              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") + " text-center py-3"
           }
         >
           Profile
@@ -117,8 +117,8 @@ const Information = () => {
           to="/info/skill"
           className={({ isActive }) =>
             (isActive
-              ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
-              : " border-0 text-gray-500") + " text-center py-3"
+              ? "text-red-500 dark:text-yellow-500 border-b-[3px] border-red-500 dark:border-yellow-500"
+              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") + " text-center py-3"
           }
         >
           Skill
@@ -127,8 +127,8 @@ const Information = () => {
           to="/info/education"
           className={({ isActive }) =>
             (isActive
-              ? "text-red-500 dark:text-yellow-500 border-b-2 border-red-500 dark:border-yellow-500"
-              : " border-0 text-gray-500") + " text-center py-3"
+              ? "text-red-500 dark:text-yellow-500 border-b-[3px] border-red-500 dark:border-yellow-500"
+              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") + " text-center py-3"
           }
         >
           Education
