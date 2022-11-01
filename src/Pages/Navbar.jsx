@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,6 +38,7 @@ const Navbar = () => {
           className="hidden dark:block h-16"
         ></img>
       </div>
+      {/* logo */}
 
       {/* home */}
       <NavLink
@@ -49,6 +50,7 @@ const Navbar = () => {
           <span className={navText}>&nbsp;&nbsp;&nbsp;Home</span>
         </div>
       </NavLink>
+      {/* home */}
 
       {/* profile */}
       <NavLink
@@ -60,6 +62,7 @@ const Navbar = () => {
           <span className={navText}>&nbsp;&nbsp;&nbsp;Profile</span>
         </div>
       </NavLink>
+      {/* profile */}
 
       {/* skill */}
       <NavLink
@@ -71,6 +74,7 @@ const Navbar = () => {
           <span className={navText}>&nbsp;&nbsp;&nbsp;Skill</span>
         </div>
       </NavLink>
+      {/* skill */}
 
       {/* education */}
       <NavLink
@@ -86,6 +90,7 @@ const Navbar = () => {
           <span className={navText}>&nbsp;Education</span>
         </div>
       </NavLink>
+      {/* education */}
 
       {/* contact */}
       <NavLink
@@ -97,6 +102,7 @@ const Navbar = () => {
           <span className={navText}>&nbsp;&nbsp;Contact</span>
         </div>
       </NavLink>
+      {/* contact */}
 
       {/* todo */}
       <NavLink
@@ -108,8 +114,9 @@ const Navbar = () => {
           <span className={navText}>&nbsp;&nbsp;Todo</span>
         </div>
       </NavLink>
+      {/* todo */}
 
-      {/* change mode */}
+      {/* switch mode */}
       <div className="flex justify-center sm:justify-start py-4 text-black dark:text-white">
         <div className="hidden sm:flex">
           <FontAwesomeIcon
@@ -140,6 +147,7 @@ const Navbar = () => {
           />
         </div>
       </div>
+      {/* switch mode */}
 
       {/* profile */}
       <div className="hidden sm:flex justify-center mt-20  p-3 ">
@@ -152,6 +160,7 @@ const Navbar = () => {
           <span className="text-gray-500">@63010095</span>
         </div>
       </div>
+      {/* profile */}
     </div>
   );
 };

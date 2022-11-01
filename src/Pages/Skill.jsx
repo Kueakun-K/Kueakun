@@ -22,7 +22,7 @@ const Skill = () => {
   return (
     <div>
       {/* Block 1 */}
-      <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
+      <div className="p-3 border-b-2 border-gray-500 dark:text-white">
         <ProfileHeader text="now" />
         {/* text */}
         <div className="mb-3 mx-5">HTML CSS JavaScript</div>
@@ -39,7 +39,7 @@ const Skill = () => {
       {/* Block 1 */}
 
       {/* Block 2 */}
-      <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
+      <div className="p-3 border-b-2 border-gray-500 dark:text-white">
         <ProfileHeader text="now" />
         {/* text */}
         <div className="mb-3 mx-5">TailwindCSS Bootstrap</div>
@@ -56,7 +56,7 @@ const Skill = () => {
       {/* Block 2 */}
 
       {/* Block 3 */}
-      <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
+      <div className="p-3 border-b-2 border-gray-500 dark:text-white">
         <ProfileHeader text="now" />
         {/* text */}
         <div className="mb-3 mx-5">ReactJS React Native</div>
@@ -73,7 +73,7 @@ const Skill = () => {
       {/* Block 3 */}
 
       {/* Block 4 */}
-      <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
+      <div className="p-3 border-b-2 border-gray-500 dark:text-white">
         <ProfileHeader text="now" />
         {/* text */}
         <div className="mb-3 mx-5">NodeJS ExpressJS</div>
@@ -90,7 +90,7 @@ const Skill = () => {
       {/* Block 4 */}
 
       {/* Block 5 */}
-      <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
+      <div className="p-3 border-b-2 border-gray-500 dark:text-white">
         <ProfileHeader text="now" />
         {/* text */}
         <div className="mb-3 mx-5">MongoDB MySQL</div>
