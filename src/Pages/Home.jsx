@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <div>
       {/* Header */}
-      <div className="pt-2 pl-5 text-xl font-bold  dark:text-white">
+      <div className="pt-2 pl-5 text-xl font-bold text-red-500 dark:text-yellow-500">
         <span>Home</span>
       </div>
       {/* Header */}
