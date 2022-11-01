@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Todo = () => {
   // let agent = navigator.userAgent;
@@ -16,6 +17,11 @@ const Todo = () => {
   // console.log(navigator.storage)
   // console.log(window.name)
   // console.log(navigator.userAgentData.brands);
+  const navigate = useNavigate();
+  React.useEffect(()=>{
+    navigate("/login")
+  },[])
+  
 
   return <div></div>;
 };
