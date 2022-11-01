@@ -9,9 +9,10 @@ import IconFooter from "../Components/IconFooter";
 const Profile = () => {
   return (
     <div>
+      {/* Block 1 */}
       <div className="p-3 dark:text-white">
         <ProfileHeader text="now" />
-
+        {/* text */}
         <div className="mb-3 mx-5">
           <span>
             Hello world! I am{" "}
@@ -31,14 +32,17 @@ const Profile = () => {
             </span>
           </span>
         </div>
+        {/* text */}
 
+        {/* img */}
         <div className="flex mb-3 justify-between mx-5">
           <img src={kueaCrop} alt="Kuea" className="w-[49%] rounded " />
           <img src={TC} alt="KueaT" className="w-[49%]  rounded " />
         </div>
-
+        {/* img */}
         <IconFooter />
       </div>
+      {/* Block 1 */}
     </div>
   );
 };

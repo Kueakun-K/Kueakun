@@ -14,7 +14,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   const locale = "en";
   const [today, setDate] = useState(new Date());
-  // const [copy, setCopy] = useState("Copy");
   useEffect(() => {
     const timer = setInterval(() => {
       setDate(new Date());
@@ -43,13 +42,14 @@ const Home = () => {
     second: "numeric",
   });
   return (
-    <div className="h-full">
-      {/* page */}
-      <div className="pt-2  pl-5 text-xl font-bold  dark:text-white">
+    <div>
+      {/* Header */}
+      <div className="pt-2 pl-5 text-xl font-bold  dark:text-white">
         <span>Home</span>
       </div>
+      {/* Header */}
 
-      {/* header */}
+      {/* Text Welcome */}
       <div className="p-3 border-b-2 border-gray-500">
         <div className="flex dark:bg-gray-800 bg-gray-300 rounded-2xl">
           <img src={cat} alt="cat" className="w-12 h-12 rounded-full m-4"></img>
@@ -58,12 +58,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Text Welcome */}
 
-      {/* container 1 */}
+      {/* Block 1 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
-        {/* profile */}
         <ProfileHeader text="1 DEC 2001" />
-
         {/* text */}
         <div className="mb-3 mx-5">
           <span>
@@ -83,19 +82,19 @@ const Home = () => {
             </span>
           </span>
         </div>
+        {/* text */}
 
         {/* img */}
         <div className="flex mb-3 justify-center mx-5">
           <img src={kuea} alt="Kuea" className="w-9/12 rounded-lg " />
         </div>
-
-        {/* icon */}
+        {/* img */}
         <IconFooter />
       </div>
+      {/* Block 1 */}
 
-      {/* container 2 */}
+      {/* Block 2 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
-        {/* profile */}
         <ProfileHeader text="now" />
         {/* text */}
         <div className=" ml-6 mb-3">
@@ -104,14 +103,6 @@ const Home = () => {
             <span className="mx-2">Contact : </span>
             <div className="group">
               <a
-                // onMouseOut={() => {
-                //   setCopy("Copy");
-                // }}
-                // onClick={() => {
-                //   navigator.clipboard.writeText("Kueakun0112@gmail.com");
-                //   setCopy("Copied");
-                // }}
-                // title={copy}
                 href="mailto:Kueakun0112@gmail.com"
                 className="font-medium text-orange-500 dark:text-yellow-500 cursor-pointer"
               >
@@ -144,10 +135,10 @@ const Home = () => {
             </a>
           </div>
         </div>
-
-        {/* icon */}
+        {/* text */}
         <IconFooter />
       </div>
+      {/* Block 2 */}
     </div>
   );
 };

@@ -18,7 +18,6 @@ const Information = () => {
   return (
     <div>
       {/* header */}
-
       <div className="flex fixed sm:static  top-0 bg-gray-100 dark:bg-slate-900 w-full z-10">
         <div className=" text-red-500 dark:text-yellow-500 my-4 mx-5 ">
           <FontAwesomeIcon icon={faArrowLeft} size="lg" />
@@ -28,7 +27,6 @@ const Information = () => {
           <div className="text-gray-500">Kueakun Niyomsit</div>
         </div>
       </div>
-
       {/* header */}
 
       {/* img + contact*/}
@@ -108,7 +106,8 @@ const Information = () => {
           className={({ isActive }) =>
             (isActive
               ? "text-red-500 dark:text-yellow-500 border-b-[3px] border-red-500 dark:border-yellow-500"
-              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") + " text-center py-3"
+              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") +
+            " text-center py-3"
           }
         >
           Profile
@@ -118,7 +117,8 @@ const Information = () => {
           className={({ isActive }) =>
             (isActive
               ? "text-red-500 dark:text-yellow-500 border-b-[3px] border-red-500 dark:border-yellow-500"
-              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") + " text-center py-3"
+              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") +
+            " text-center py-3"
           }
         >
           Skill
@@ -128,7 +128,8 @@ const Information = () => {
           className={({ isActive }) =>
             (isActive
               ? "text-red-500 dark:text-yellow-500 border-b-[3px] border-red-500 dark:border-yellow-500"
-              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") + " text-center py-3"
+              : "border-0 text-gray-500 hover:text-red-500 hover:bg-red-200 dark:hover:text-yellow-500 dark:hover:bg-yellow-500 dark:hover:bg-opacity-30") +
+            " text-center py-3"
           }
         >
           Education
