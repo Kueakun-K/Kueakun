@@ -20,6 +20,7 @@ const Todo = () => {
   const navigate = useNavigate();
   React.useEffect(()=>{
     navigate("/login")
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   
 
