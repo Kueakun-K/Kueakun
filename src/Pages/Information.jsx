@@ -12,6 +12,7 @@ import {
   faGithub,
   faFacebook,
   faInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Information = () => {
@@ -43,12 +44,19 @@ const Information = () => {
         <img
           src={Cat}
           alt="cat"
-          className="absolute z-[2] rounded-full w-[7.5rem] top-48 sm:top-32 left-6 border-gray-100 dark:border-slate-900 border-4"
+          className="absolute z-[2] rounded-full w-[7.5rem] top-48 sm:top-32 left-4 sm:left-6 border-gray-100 dark:border-slate-900 border-4"
         />
         {/* profile img */}
 
         {/* contact */}
-        <div className="absolute flex top-[16.5rem] sm:top-52 right-12 z-[3] space-x-3 dark:text-gray-100">
+        <div className="absolute flex top-[16.5rem] sm:top-52 right-6 sm:right-12 z-[3] space-x-3 dark:text-gray-100">
+          <a
+            href="https://www.linkedin.com/in/kueakun-niyomsit-369457255/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+          </a>
           <a
             href="https://github.com/Kueakun-K"
             target="_blank"

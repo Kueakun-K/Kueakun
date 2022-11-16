@@ -9,7 +9,7 @@ import ProfileHeader from "../Components/ProfileHeader";
 import IconFooter from "../Components/IconFooter";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   const locale = "en";
@@ -100,7 +100,7 @@ const Home = () => {
         <div className=" ml-6 mb-3">
           <div className="flex">
             <img src={gmail} alt="Gmail" className="w-5 h-5" />
-            <span className="mx-2">Contact : </span>
+            <span className="mx-2">Email : </span>
             <div className="group">
               <a
                 href="mailto:Kueakun0112@gmail.com"
@@ -120,6 +120,18 @@ const Home = () => {
               className="font-medium text-orange-500 dark:text-yellow-500"
             >
               Kueakun-K
+            </a>
+          </div>
+          <div className="flex">
+            <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
+            <span className="mx-2">LinkedIn :</span>
+            <a
+              href="https://www.linkedin.com/in/kueakun-niyomsit-369457255/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-orange-500 dark:text-yellow-500"
+            >
+              Kueakun Niyomsit
             </a>
           </div>
           <div className="flex">
