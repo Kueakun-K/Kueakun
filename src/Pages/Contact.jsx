@@ -1,4 +1,6 @@
 import React from "react";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 import { UserIcon } from "@heroicons/react/24/solid";
 
@@ -6,6 +8,24 @@ const Contact = () => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const HandleSubmit = () => {
+    axios
+      .post("http://localhost:3006/api/user/contact", {
+        Name: name,
+        Email: email,
+        Message: message,
+      })
+      .then((response) => {
+        setName("");
+        setEmail("");
+        setMessage("");
+        Swal.fire(response.data.message);
+      })
+      .catch((error) => {
+        // console.log(error.response.data);
+        Swal.fire(error.response.data.message);
+      });
+  };
 
   return (
     <div>
@@ -53,6 +73,7 @@ const Contact = () => {
       {/* Preview */}
 
       {/* Text input */}
+
       <div className="p-5 border-b-2 border-gray-500">
         {/* text */}
         <div className="text-gray-800 dark:text-gray-300 mb-5">
@@ -87,13 +108,17 @@ const Contact = () => {
             />
           </div>
           <div className="flex justify-center mt-5">
-            <button className="bg-gray-800 text-gray-300 dark:bg-gray-300 dark:text-gray-800 p-2">
+            <button
+              onClick={HandleSubmit}
+              className="bg-gray-800 text-gray-300 dark:bg-gray-300 dark:text-gray-800 p-2"
+            >
               MESSAGE ME
             </button>
           </div>
         </div>
         {/* input */}
       </div>
+
       {/* Text input */}
     </div>
   );
