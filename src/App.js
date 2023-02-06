@@ -14,7 +14,7 @@ import Profile from "./Pages/Profile";
 import Skill from "./Pages/Skill";
 import Education from "./Pages/Education";
 import Contact from "./Pages/Contact";
-import Todo from "./Pages/Todo";
+import Message from "./Pages/Message";
 import Login from "./Pages/Login";
 import Error from "./Pages/Error";
 
@@ -36,7 +36,7 @@ function App() {
                 <Route path="education" element={<Education />} />
               </Route>
               <Route path="/contact" element={<Contact />} />
-              <Route path="/todo" element={<Todo />} />
+              <Route path="/message" element={<Message />} />
               <Route path="/login" element={<Login />} />
               <Route path="/counter" element={<Counter />} />
               <Route path="*" element={<Error />} />

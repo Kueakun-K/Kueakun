@@ -20,10 +20,10 @@ import IconFooter from "../Components/IconFooter";
 
 const Skill = () => {
   return (
-    <div>
+    <>
       {/* Block 1 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
-        <ProfileHeader text="now" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="now" />
         {/* text */}
         <div className="mb-3 mx-5">HTML CSS JavaScript TypeScript</div>
         {/* text */}
@@ -48,7 +48,7 @@ const Skill = () => {
 
       {/* Block 2 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
-        <ProfileHeader text="now" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="now" />
         {/* text */}
         <div className="mb-3 mx-5">TailwindCSS Bootstrap</div>
         {/* text */}
@@ -73,7 +73,7 @@ const Skill = () => {
 
       {/* Block 3 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
-        <ProfileHeader text="now" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="now" />
         {/* text */}
         <div className="mb-3 mx-5">ReactJS React Native</div>
         {/* text */}
@@ -98,7 +98,7 @@ const Skill = () => {
 
       {/* Block 4 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
-        <ProfileHeader text="now" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="now" />
         {/* text */}
         <div className="mb-3 mx-5">NodeJS ExpressJS</div>
         {/* text */}
@@ -123,7 +123,7 @@ const Skill = () => {
 
       {/* Block 5 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
-        <ProfileHeader text="now" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="now" />
         {/* text */}
         <div className="mb-3 mx-5">MongoDB MySQL</div>
         {/* text */}
@@ -145,7 +145,7 @@ const Skill = () => {
         <IconFooter />
       </div>
       {/* Block 5 */}
-    </div>
+    </>
   );
 };
 

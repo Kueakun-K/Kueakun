@@ -106,12 +106,12 @@ const Navbar = () => {
 
       {/* todo */}
       <NavLink
-        to="/todo"
+        to="/message"
         className={({ isActive }) => (isActive ? activeLink : notActiveLink)}
       >
         <div className={navBlock}>
-          <FontAwesomeIcon icon={faTableList} size="xl" title="Todo" />
-          <span className={navText}>&nbsp;&nbsp;Todo</span>
+          <FontAwesomeIcon icon={faTableList} size="xl" title="Message" />
+          <span className={navText}>&nbsp;&nbsp;Message</span>
         </div>
       </NavLink>
       {/* todo */}

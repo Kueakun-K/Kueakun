@@ -42,7 +42,7 @@ const Home = () => {
     second: "numeric",
   });
   return (
-    <div>
+    <>
       {/* Header */}
       <div className="pt-2 pl-5 text-xl font-bold text-red-500 dark:text-yellow-500">
         <span>Home</span>
@@ -62,7 +62,7 @@ const Home = () => {
 
       {/* Block 1 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white">
-        <ProfileHeader text="1 DEC 2001" />
+        <ProfileHeader cat={true} name="Kueakun-K"  text="1 DEC 2001" />
         {/* text */}
         <div className="mb-3 mx-5">
           <span>
@@ -95,7 +95,7 @@ const Home = () => {
 
       {/* Block 2 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
-        <ProfileHeader text="now" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="now" />
         {/* text */}
         <div className=" ml-6 mb-3">
           <div className="flex">
@@ -151,7 +151,7 @@ const Home = () => {
         <IconFooter />
       </div>
       {/* Block 2 */}
-    </div>
+    </>
   );
 };
 export default Home;

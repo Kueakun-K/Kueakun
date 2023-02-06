@@ -8,10 +8,10 @@ import IconFooter from "../Components/IconFooter";
 
 const Profile = () => {
   return (
-    <div>
+    <>
       {/* Block 1 */}
       <div className="p-3 dark:text-white">
-        <ProfileHeader text="now" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="now" />
         {/* text */}
         <div className="mb-3 mx-5">
           <span>
@@ -43,7 +43,7 @@ const Profile = () => {
         <IconFooter />
       </div>
       {/* Block 1 */}
-    </div>
+    </>
   );
 };
 

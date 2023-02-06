@@ -17,7 +17,7 @@ import {
 
 const Information = () => {
   return (
-    <div>
+    <>
       {/* header */}
       <div className="flex fixed sm:static  top-0 bg-gray-100 dark:bg-slate-900 w-full z-10">
         <div className=" text-red-500 dark:text-yellow-500 my-4 mx-5 ">
@@ -145,7 +145,7 @@ const Information = () => {
       </div>
       {/* nav profile */}
       <Outlet />
-    </div>
+    </>
   );
 };
 

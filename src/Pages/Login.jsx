@@ -26,7 +26,8 @@ const Login = () => {
         setPassword("");
         // console.log(response.data)
         localStorage.setItem("refreshToken", response.data.refreshToken);
-        navigate("/todo");
+        localStorage.setItem("accessToken", response.data.accessToken);
+        navigate("/message");
       })
       .catch((error) => {
         // console.log(error.response.data);

@@ -5,10 +5,10 @@ import IconFooter from "../Components/IconFooter";
 
 const Education = () => {
   return (
-    <div>
+    <>
       {/* Block 1 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
-        <ProfileHeader text="2020 - now" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="2020 - now" />
         {/* text */}
         <div className="mb-3 mx-5">
           2020 - now <br /> I'm studying at{" "}
@@ -28,7 +28,7 @@ const Education = () => {
 
       {/* Block 2 */}
       <div className="p-3 border-b-2 border-gray-500 dark:text-white ">
-        <ProfileHeader text="2014 - 2019" />
+        <ProfileHeader cat={true} name="Kueakun-K" text="2014 - 2019" />
         {/* text */}
         <div className="mb-3 mx-5">
           2014 - 2019 <br /> I'm studied at{" "}
@@ -45,7 +45,7 @@ const Education = () => {
         <IconFooter />
       </div>
       {/* Block 2 */}
-    </div>
+    </>
   );
 };
 

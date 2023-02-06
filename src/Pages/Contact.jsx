@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <>
       {/* Header */}
       <div className="py-2 pl-5 text-xl font-bold border-b-2 border-gray-500 text-red-500 dark:text-yellow-500">
         <span>Contact</span>
@@ -120,7 +120,7 @@ const Contact = () => {
       </div>
 
       {/* Text input */}
-    </div>
+    </>
   );
 };
 
