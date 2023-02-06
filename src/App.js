@@ -22,7 +22,6 @@ import { Counter } from "./Services/features/counter/Counter";
 
 function App() {
   const darkToggle = useSelector((state) => state.darkToggle.value);
-
   return (
     <div className={`${darkToggle && "dark"}`}>
       <div className="flex sm:pr-12 sm:pl-1 md:pr-20 md:pl-2 lg:px-40 xl:px-52 dark:bg-slate-900 bg-gray-100 min-h-screen">
